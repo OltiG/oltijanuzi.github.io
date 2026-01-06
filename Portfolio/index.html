@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olti Januzi • Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="glow-orbit glow-orbit--one"></div>
+    <div class="glow-orbit glow-orbit--two"></div>
+    <div class="glow-orbit glow-orbit--three"></div>
+
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="nav__logo-dot"></span>
+        <span class="nav__logo-text">Olti Januzi</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav__cta" onclick="scrollToSection('contact')">
+        Let’s talk
+      </button>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">PORTFOLIO  //  v1.0</p>
+          <h1 class="hero__title">
+            <span class="hero__title-main">Hi, I’m <span class="accent">Olti Januzi</span></span>
+            <span class="hero__title-sub">Building the future, one line of code at a time.</span>
+          </h1>
+          <p class="hero__text">
+            Short bio goes here. Mention your role (e.g. Software Engineer), your main stack,
+            and what you love to build. This is your elevator pitch.
+          </p>
+
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="label">Location</span>
+              <span class="value">Vushtrri, Kosovo</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="label">Focus</span>
+              <span class="value">Web · Cybersecurity · Networking</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" onclick="scrollToSection('cv')">
+              View CV
+            </button>
+            <button class="btn btn--ghost" onclick="scrollToSection('projects')">
+              View Projects
+            </button>
+          </div>
+
+          <div class="hero__links">
+            <a href="https://github.com/OltiG" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <span class="divider">•</span>
+            <a href="https://linkedin.com/in/olti-januzi" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <span class="divider">•</span>
+            <a href="mailto:oltijanuzi2.0@outlook.com">Email</a>
+          </div>
+        </div>
+
+        <aside class="hero__profile">
+          <div class="profile-card">
+            <div class="profile-card__frame">
+              <div class="profile-card__img" id="profileImage">
+                <img src="./assets/PrfPic-removebg-preview.png" alt="Olti Januzi" />
+              </div>
+              <div class="profile-card__ring profile-card__ring--outer"></div>
+              <!-- <div class="profile-card__ring profile-card__ring--inner"></div> -->
+            </div>
+            <div class="profile-card__info">
+              <p class="profile-card__name">Olti Januzi</p>
+              <p class="profile-card__role">Software Engineer</p>
+              <p class="profile-card__tag">Available for work</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section section--border">
+        <div class="section__header">
+          <p class="section__eyebrow">/ about</p>
+          <h2>Who I am</h2>
+        </div>
+        <div class="grid grid--two">
+          <div>
+            <p>
+              This is where your longer bio goes. Talk about your background, what got you
+              into tech, and the problems you like solving. Highlight your strongest skills
+              and the kind of work you want to be doing.
+            </p>
+            <p>
+              You can also mention any notable achievements, communities you’re part of,
+              or side projects you’re proud of.
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__label">Experience</span>
+              <span class="stat-card__value">2+ yrs</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Certifications</span>
+              <span class="stat-card__value">10+</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Projects</span>
+              <span class="stat-card__value">10+</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section--border">
+        <div class="section__header">
+          <p class="section__eyebrow">/ certifications</p>
+          <h2>Certifications</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">PaloAltoNetworks</p>
+              <p class="cert-card__date">2026</p>
+            </div>
+            <h3 class="cert-card__title">Security Operations Fundamentals</h3>
+            <p class="cert-card__desc">
+              Learned foundational security operations principles, threat intelligence, and incident response methodologies, 
+              preparing for entry-level security operations roles.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">PaloAltoNetworks</p>
+              <p class="cert-card__date">2026</p>
+            </div>
+            <h3 class="cert-card__title">Cybersecurity Fundamentals</h3>
+            <p class="cert-card__desc">
+              Learned foundational cybersecurity principles, threat intelligence, and incident response methodologies, 
+              preparing for entry-level cybersecurity roles.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">PaloAltoNetworks</p>
+              <p class="cert-card__date">2026</p>
+            </div>
+            <h3 class="cert-card__title">Cloud Security Fundamentals</h3>
+            <p class="cert-card__desc">
+              Learned foundational cloud security principles, threat intelligence, and incident response methodologies, 
+              preparing for entry-level cloud security roles.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">PaloAltoNetworks</p>
+              <p class="cert-card__date">2026</p>
+            </div>
+            <h3 class="cert-card__title">Network Security Fundamentals</h3>
+            <p class="cert-card__desc">
+              Learned foundational network security principles, threat intelligence, and incident response methodologies, 
+              preparing for entry-level network security roles.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">Cisco</p>
+              <p class="cert-card__date">2024</p>
+            </div>
+            <h3 class="cert-card__title">IT Essentials</h3>
+            <p class="cert-card__desc">
+              Comprehensive foundational knowledge in IT hardware, software, networking, and 
+              cybersecurity, preparing for entry-level IT support roles.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">BitAcademy</p>
+              <p class="cert-card__date">2023</p>
+            </div>
+            <h3 class="cert-card__title">Python Programming</h3>
+            <p class="cert-card__desc">
+              Acquired practical skills in Python for application development, data manipulation, and 
+              scripting, covering core programming concepts.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">BitAcademy</p>
+              <p class="cert-card__date">2023</p>
+            </div>
+            <h3 class="cert-card__title">Soft Skills</h3>
+            <p class="cert-card__desc">
+              Developed essential interpersonal and professional skills, including communication, 
+              teamwork, problem-solving, and adaptability.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">Growzillas Academy</p>
+              <p class="cert-card__date">2023</p>
+            </div>
+            <h3 class="cert-card__title">Social Media Marketing</h3>
+            <p class="cert-card__desc">
+              Developed expertise in digital marketing strategies, content creation, and audience 
+              engagement specific to social media platforms.            </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">PBC Academy</p>
+              <p class="cert-card__date">2022</p>
+            </div>
+            <h3 class="cert-card__title">Web Development</h3>
+            <p class="cert-card__desc">
+              Acquired proficiency in fundamental web technologies (HTML, CSS, JavaScript, PHP) and 
+              modern frameworks for building responsive and interactive web applications.            </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">Universum College</p>
+              <p class="cert-card__date">2023</p>
+            </div>
+            <h3 class="cert-card__title">Web Development</h3>
+            <p class="cert-card__desc">
+              Enhanced practical skills in web development principles and techniques through hands-on 
+              training and project participation.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__meta">
+              <p class="cert-card__provider">Cisco</p>
+              <p class="cert-card__date">2022</p>
+            </div>
+            <h3 class="cert-card__title">Introduction to Cybersecurity</h3>
+            <p class="cert-card__desc">
+              Learned core cybersecurity concepts, threats, vulnerabilities, and defense mechanisms, 
+              including network security and data protection.             </p>
+            <a href="https://www.credly.com/badges/3a771171-7d0f-480e-9e2d-10430572634a/public_url" class="cert-card__link" target="_blank" rel="noreferrer">
+              View credential
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--border">
+        <div class="section__header">
+          <p class="section__eyebrow">/ projects</p>
+          <h2>Highlighted work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__header">
+              <p class="project-card__tag">Featured</p>
+              <h3 class="project-card__title">UniBot</h3>
+            </div>
+            <p class="project-card__desc">
+              UniBot is a chatbot that allows students to ask questions about services and payments.
+            </p>
+            <div class="project-card__meta">
+              <span class="chip">Python</span>
+              <span class="chip">NLP</span>
+              <span class="chip">PyTorch</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/OltiG/UniBot" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/OltiG/UniBot" target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <p class="project-card__tag">Featured</p>
+              <h3 class="project-card__title">BusRide</h3>
+            </div>
+            <p class="project-card__desc">
+              BusRide is a bus tracking system that allows users to track the buses that you want to take. See where they go, how much they cost, and when they arrive.
+            </p>
+            <div class="project-card__meta">
+              <span class="chip">Java/Spring Boot</span>
+              <span class="chip">Vue.js</span>
+              <span class="chip">JWT Authentication</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/OltiG/BusRide" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/OltiG/BusRide" target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <p class="project-card__tag">Featured</p>
+              <h3 class="project-card__title">Pentest Report</h3>
+            </div>
+            <p class="project-card__desc">
+              A penetration test report for a web application that was used to test the security of the application.
+            </p>
+            <div class="project-card__meta">
+              <span class="chip">Kali Linux</span>
+              <span class="chip">Nmap</span>
+              <span class="chip">Metasploit</span>
+              <span class="chip">MsfVenom</span>
+            </div>
+            <div class="project-card__links">
+              <a href="./assets/PenetrationTestReport.pdf" target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+          </article>
+          
+        </div>
+      </section>
+
+      <section id="cv" class="section section--border">
+        <div class="section__header">
+          <p class="section__eyebrow">/ curriculum vitae</p>
+          <h2>CV</h2>
+        </div>
+        <div class="cv-layout">
+          <div class="cv-layout__summary">
+            <p>
+              Attach your latest CV as a PDF and link it below. You can also add a visual
+              summary of your experience, skills, and education so people get a quick overview
+              before downloading.
+            </p>
+            <a id="cvDownload" href="./assets/Olti_Januzi_CV_EP.pdf" class="btn btn--primary btn--sm" target="_blank" rel="noreferrer">
+              Open CV (PDF)
+            </a>
+            
+          </div>
+          <div class="cv-layout__preview">
+            <div class="cv-preview">
+              <div class="cv-preview__header">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--amber"></span>
+                <span class="dot dot--green"></span>
+              </div>
+              <div class="cv-preview__body">
+                <p class="cv-preview__title">Experience Snapshot</p>
+                <ul class="cv-preview__list">
+                  <li>Business Intelligence Scout @ Everywhereestremera — 2024–2024</li>
+                  <li>IT Support Technician @ Lutfi Musiqi — 2020–2023</li>
+                  <li>Lutfi Musiqi / IT Technician — 2020–2023</li>
+                  <li>Cacttus Education / Web & Mobile Applications Developer — 2023–2025</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--border section--last">
+        <div class="section__header">
+          <p class="section__eyebrow">/ contact</p>
+          <h2>Let’s build something</h2>
+        </div>
+        <div class="grid grid--two">
+          <div>
+            <p>
+              Whether you’re looking for a collaborator, hiring, or just want to say hi,
+              feel free to reach out. I usually respond within a day.
+            </p>
+            <div class="contact__channel">
+              <span class="label">Email</span>
+              <a href="mailto:oltijanuzi2.0@outlook.com" class="value">
+                oltijanuzi2.0@outlook.com
+              </a>
+            </div>
+            <div class="contact__channel">
+              <span class="label">LinkedIn</span>
+              <a href="https://linkedin.com/in/olti-januzi" target="_blank" rel="noreferrer" class="value">
+                Olti Januzi
+              </a>
+            </div>
+            <div class="contact__channel">
+              <span class="label">GitHub</span>
+              <a href="https://github.com/OltiG" target="_blank" rel="noreferrer" class="value">
+                OltiG
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="contact-form__row">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+            </div>
+            <div class="contact-form__row">
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <div class="contact-form__row">
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Tell me about your project or question..."
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Send message
+            </button>
+            <p class="contact-form__hint">
+              This is a frontend-only demo form. I haven't implemented the backend yet.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Olti Januzi. All rights reserved.</p>
+      <p class="footer__meta">Designed with a futuristic dark theme.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
